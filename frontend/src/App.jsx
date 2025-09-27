@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Login from "./components/Login";
-import Dashboard from "./components/user/dashboard";
+import Dashboard from "./components/user/Dashboard";
 import Routes from "./components/user/Routes";
 import EditRoutes from "./components/busAuthority/EditRoutes";
 import RegisterUser from "./components/cyber/RegisterUser";
