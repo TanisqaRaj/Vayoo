@@ -14,11 +14,11 @@ const Login = () => {
     if (role === "user") {
       navigate("/dashboard");
     } else if (role === "admin") {
-      navigate("/addbusauthandcyber");
+      navigate("/admin/dashboard");
     } else if (role === "cyber") {
-      navigate("/registeruser");
+      navigate("/cyberauthority/dashboard");
     } else if (role === "busAuthority") {
-      navigate("/editroutes");
+      navigate("/busauthority/dashboard");
     } else {
       navigate("/"); // fallback
     }

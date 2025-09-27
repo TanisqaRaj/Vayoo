@@ -41,6 +41,11 @@ const CyberDashboard = () => {
         Cyber Cafe Booking Dashboard
       </h1>
 
+      <div>
+        <h2 className="text-2xl font-bold mb-6 text-center text-white">
+          Registererd users details
+        </h2>
+      </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {bookings.map((booking, idx) => (
           <div
@@ -63,7 +68,9 @@ const CyberDashboard = () => {
                 <h2 className="text-lg font-semibold text-gray-700">
                   {booking.customerName}
                 </h2>
-                <p className="text-gray-500">Contact: {booking.customerNumber}</p>
+                <p className="text-gray-500">
+                  Contact: {booking.customerNumber}
+                </p>
               </div>
 
               {/* Bus Info */}

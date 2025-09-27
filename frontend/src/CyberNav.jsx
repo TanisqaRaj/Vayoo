@@ -34,33 +34,15 @@ const Navbar = () => {
             </div>
             <div
               className="cursor-pointer hover:text-yellow-300 transition duration-200"
-              onClick={() => handleNavigate("/dashboard")}
-            >
-              UserDashboard
-            </div>
-            <div
-              className="cursor-pointer hover:text-yellow-300 transition duration-200"
-              onClick={() => handleNavigate("/bookticket")}
-            >
-              BookTicket
-            </div>
-            <div
-              className="cursor-pointer hover:text-yellow-300 transition duration-200"
-              onClick={() => handleNavigate("/busauthority/dashboard")}
-            >
-              BusAuthority
-            </div>
-            <div
-              className="cursor-pointer hover:text-yellow-300 transition duration-200"
               onClick={() => handleNavigate("/cyberauthority/dashboard")}
             >
-              CyberAuthority
-            </div>
+              CyberDashboard
+            </div>           
             <div
               className="cursor-pointer hover:text-yellow-300 transition duration-200"
-              onClick={() => handleNavigate("/admin/dashboard")}
+              onClick={() => handleNavigate("/registeruser")}
             >
-              AdminDashboard
+              RegisterUser
             </div>
           </div>
 
@@ -94,27 +76,21 @@ const Navbar = () => {
           </div>
           <div
             className="block cursor-pointer hover:text-yellow-300 transition duration-200"
-            onClick={() => handleNavigate("/about")}
+            onClick={() => handleNavigate("/cyberauthority/dashboard")}
           >
-            About
+            CyberDashboard
           </div>
           <div
             className="block cursor-pointer hover:text-yellow-300 transition duration-200"
-            onClick={() => handleNavigate("/features")}
+            onClick={() => handleNavigate("/registeruser")}
           >
-            Features
-          </div>
-          <div
-            className="block cursor-pointer hover:text-yellow-300 transition duration-200"
-            onClick={() => handleNavigate("/contact")}
-          >
-            Contact
+            RegisterUser
           </div>
           <div
             className="block cursor-pointer bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-600 transition duration-200"
             onClick={() => handleNavigate("/signin")}
           >
-            Sign In
+            Sign out
           </div>
         </div>
       )}

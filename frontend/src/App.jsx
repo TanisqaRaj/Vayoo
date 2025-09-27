@@ -12,7 +12,10 @@ import BookTicket from "./components/user/BookTicket";
 import Landing from "./components/Landing";
 import AuthorityDashboard from "./components/busAuthority/Dashboard";
 import CyberDashboard from "./components/cyber/Dashboard";
-
+import AdminNav from "./components/AdminNav";
+import AdminDashboard from "./components/systemAdmin/Dashboard";
+import CyberNav from "./CyberNav";
+import BusNav from "./BusNav";
 function App() {
   const router = createBrowserRouter([
     {
@@ -21,7 +24,7 @@ function App() {
         <div>
           <Navbar />
           <Landing />
-          <Footer/>
+          <Footer />
         </div>
       ),
     },
@@ -59,7 +62,7 @@ function App() {
       path: "/editroutes",
       element: (
         <div>
-          <Navbar />
+          <BusNav />
           <EditRoutes />
           <Footer />
         </div>
@@ -69,7 +72,7 @@ function App() {
       path: "/registeruser",
       element: (
         <div>
-          <Navbar />
+          <CyberNav />
           <RegisterUser />
           <Footer />
         </div>
@@ -79,7 +82,7 @@ function App() {
       path: "/addbusauthandcyber",
       element: (
         <div>
-          <Navbar />
+          <AdminNav />
           <AddBusAuthAndCyber />
           <Footer />
         </div>
@@ -89,7 +92,7 @@ function App() {
       path: "/userqueries",
       element: (
         <div>
-          <Navbar />
+          <AdminNav />
           <UserQueries />
           <Footer />
         </div>
@@ -109,23 +112,32 @@ function App() {
       path: "/busauthority/dashboard",
       element: (
         <div>
-          <Navbar />
+          <BusNav />
           <AuthorityDashboard />
           <Footer />
         </div>
       ),
     },
-    
-{
+    {
       path: "/cyberauthority/dashboard",
       element: (
         <div>
-          <Navbar />
+          <CyberNav />
           <CyberDashboard />
           <Footer />
         </div>
       ),
-    }
+    },
+     {
+      path: "/admin/dashboard",
+      element: (
+        <div>
+          <AdminNav />
+          <AdminDashboard />
+          <Footer />
+        </div>
+      ),
+    },
   ]);
   return <RouterProvider router={router} />;
 }

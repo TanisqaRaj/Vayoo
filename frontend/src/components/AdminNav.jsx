@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Menu, X, Bus } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
-const Navbar = () => {
+const AdminNav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
 
@@ -32,36 +32,25 @@ const Navbar = () => {
             >
               Home
             </div>
-            <div
-              className="cursor-pointer hover:text-yellow-300 transition duration-200"
-              onClick={() => handleNavigate("/dashboard")}
-            >
-              UserDashboard
-            </div>
-            <div
-              className="cursor-pointer hover:text-yellow-300 transition duration-200"
-              onClick={() => handleNavigate("/bookticket")}
-            >
-              BookTicket
-            </div>
-            <div
-              className="cursor-pointer hover:text-yellow-300 transition duration-200"
-              onClick={() => handleNavigate("/busauthority/dashboard")}
-            >
-              BusAuthority
-            </div>
-            <div
-              className="cursor-pointer hover:text-yellow-300 transition duration-200"
-              onClick={() => handleNavigate("/cyberauthority/dashboard")}
-            >
-              CyberAuthority
-            </div>
-            <div
+             <div
               className="cursor-pointer hover:text-yellow-300 transition duration-200"
               onClick={() => handleNavigate("/admin/dashboard")}
             >
               AdminDashboard
             </div>
+            <div
+              className="cursor-pointer hover:text-yellow-300 transition duration-200"
+              onClick={() => handleNavigate("/addbusauthandcyber")}
+            >
+              AddBusAndCyber
+            </div>
+            <div
+              className="cursor-pointer hover:text-yellow-300 transition duration-200"
+              onClick={() => handleNavigate("/userqueries")}
+            >
+              UserQueries
+            </div>
+           
           </div>
 
           {/* Sign In - Right */}
@@ -70,7 +59,7 @@ const Navbar = () => {
               className="cursor-pointer font-extrabold text-lg text-white px-4 py-2 rounded-lg hover:bg-yellow-400 transition duration-200"
               onClick={() => handleNavigate("/login")}
             >
-              Sign In
+              Sign out
             </div>
           </div>
 
@@ -114,7 +103,7 @@ const Navbar = () => {
             className="block cursor-pointer bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-600 transition duration-200"
             onClick={() => handleNavigate("/signin")}
           >
-            Sign In
+            Sign out
           </div>
         </div>
       )}
@@ -122,4 +111,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default AdminNav;

@@ -34,43 +34,24 @@ const Navbar = () => {
             </div>
             <div
               className="cursor-pointer hover:text-yellow-300 transition duration-200"
-              onClick={() => handleNavigate("/dashboard")}
-            >
-              UserDashboard
-            </div>
-            <div
-              className="cursor-pointer hover:text-yellow-300 transition duration-200"
-              onClick={() => handleNavigate("/bookticket")}
-            >
-              BookTicket
-            </div>
-            <div
-              className="cursor-pointer hover:text-yellow-300 transition duration-200"
               onClick={() => handleNavigate("/busauthority/dashboard")}
             >
               BusAuthority
             </div>
             <div
               className="cursor-pointer hover:text-yellow-300 transition duration-200"
-              onClick={() => handleNavigate("/cyberauthority/dashboard")}
+              onClick={() => handleNavigate("/editroutes")}
             >
-              CyberAuthority
-            </div>
-            <div
-              className="cursor-pointer hover:text-yellow-300 transition duration-200"
-              onClick={() => handleNavigate("/admin/dashboard")}
-            >
-              AdminDashboard
+              EditRoutes
             </div>
           </div>
-
           {/* Sign In - Right */}
           <div className="hidden md:flex">
             <div
               className="cursor-pointer font-extrabold text-lg text-white px-4 py-2 rounded-lg hover:bg-yellow-400 transition duration-200"
               onClick={() => handleNavigate("/login")}
             >
-              Sign In
+              Sign out
             </div>
           </div>
 
@@ -94,27 +75,21 @@ const Navbar = () => {
           </div>
           <div
             className="block cursor-pointer hover:text-yellow-300 transition duration-200"
-            onClick={() => handleNavigate("/about")}
+            onClick={() => handleNavigate("/busauthority/dashboard")}
           >
-            About
+            BusAuthority
           </div>
           <div
             className="block cursor-pointer hover:text-yellow-300 transition duration-200"
-            onClick={() => handleNavigate("/features")}
+            onClick={() => handleNavigate("/editroutes")}
           >
-            Features
-          </div>
-          <div
-            className="block cursor-pointer hover:text-yellow-300 transition duration-200"
-            onClick={() => handleNavigate("/contact")}
-          >
-            Contact
+            EditRoutes
           </div>
           <div
             className="block cursor-pointer bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-600 transition duration-200"
             onClick={() => handleNavigate("/signin")}
           >
-            Sign In
+            Sign out
           </div>
         </div>
       )}
