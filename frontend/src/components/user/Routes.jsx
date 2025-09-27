@@ -2,7 +2,7 @@ import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Bus } from "lucide-react";
 import RoutesData from "./RoutesData.js";
-import backgroundImg from "../../assets/routesImage.png";
+// import backgroundImg from "../../assets/routesImage.png";
 
 const Routes = () => {
   const location = useLocation();
@@ -35,7 +35,7 @@ const Routes = () => {
     <div
       className="min-h-screen flex flex-col items-center justify-center p-6"
       style={{
-        backgroundImage: `url(${backgroundImg})`,
+        backgroundImage: "url(/routesImage.png)",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

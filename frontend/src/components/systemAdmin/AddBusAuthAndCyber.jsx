@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Trash2 } from "lucide-react";
 import { motion } from "framer-motion";
-import backgroundImg from "../../assets/busAuth.png"; // Add your background image here
+// import backgroundImg from "../../assets/busAuth.png"; // Add your background image here
 
 const AddBusAuthAndCyber = () => {
   const [entries, setEntries] = useState([]);

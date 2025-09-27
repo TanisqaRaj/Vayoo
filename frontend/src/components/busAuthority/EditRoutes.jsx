@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Trash2, Edit, PlusCircle } from "lucide-react";
 import RoutesData from "../user/RoutesData";
 import { motion } from "framer-motion";
-import backgroundImg from "../../assets/busAuth.png"; // Add your background image here
+// import backgroundImg from "../../assets/busAuth.png"; // Add your background image here
 
 const EditRoutes = () => {
   const [routes, setRoutes] = useState(RoutesData);
@@ -49,7 +49,7 @@ const EditRoutes = () => {
   return (
     <div
       className="min-h-screen p-8 bg-cover bg-center bg-no-repeat flex flex-col items-center"
-      style={{ backgroundImage: `url(${backgroundImg})` }}
+      style={{ backgroundImage:  "url(/busAuth.png)" }}
     >
       <motion.h1
         className="text-4xl md:text-5xl font-extrabold mb-10 text-yellow-500 text-center drop-shadow-lg"

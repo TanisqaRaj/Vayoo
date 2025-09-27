@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import bgVideo from "../assets/runningbusundefined.mp4";
-import {
-  FaBus,
-  FaCalendarCheck,
-  FaMapMarkedAlt,
-  FaUsers,
-} from "react-icons/fa";
+// import bgVideo from "../assets/runningbusundefined.mp4";
+// import {
+//   FaBus,
+//   FaCalendarCheck,
+//   FaMapMarkedAlt,
+//   FaUsers,
+// } from "react-icons/fa";
 
 const Landing = () => {
   const [registeredUsers, setRegisteredUsers] = useState(0);
@@ -26,7 +26,7 @@ const Landing = () => {
             muted
             playsInline
           >
-            <source src={bgVideo} type="video/mp4" />
+            <source src="./runningbusundefined.mp4" type="video/mp4" />
           </video>
           {/* Overlay */}
           <div className="absolute top-0 left-0 w-full h-full bg-black/40 -z-10"></div>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Trash2 } from "lucide-react";
 import { motion } from "framer-motion";
-import backgroundImg from "../../assets/busAuth.png";
+// import backgroundImg from "../../assets/busAuth.png";
 // import axios from "axios";
 
 const RegisterUser = () => {
@@ -58,7 +58,7 @@ const RegisterUser = () => {
   return (
     <div
       className="min-h-screen flex flex-col items-center p-6 bg-cover bg-center relative"
-      style={{ backgroundImage: `url(${backgroundImg})` }}
+      style={{ backgroundImage:  "url(/busAuth.png)" }}
     >
       {/* Overlay */}
       {/* <div className="absolute inset-0 bg-black opacity-40 z-0"></div> */}

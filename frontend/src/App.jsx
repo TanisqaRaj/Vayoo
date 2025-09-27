@@ -16,22 +16,22 @@ import CyberDashboard from "./components/cyber/Dashboard";
 function App() {
   const router = createBrowserRouter([
     {
-      path: "/login",
-      element: (
-        <div>
-          <Navbar />
-          <Login />
-          <Footer />
-        </div>
-      ),
-    },
-    {
       path: "/",
       element: (
         <div>
           <Navbar />
           <Landing />
           <Footer/>
+        </div>
+      ),
+    },
+    {
+      path: "/login",
+      element: (
+        <div>
+          <Navbar />
+          <Login />
+          <Footer />
         </div>
       ),
     },

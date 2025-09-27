@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Bus } from "lucide-react";
-import runningVideo from "../../assets/runningbusundefined.mp4";
+// import runningVideo from "../../assets/runningbusundefined.mp4";
 
 const Dashboard = () => {
   const [source, setSource] = useState("");
