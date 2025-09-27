@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Trash2 } from "lucide-react";
 import { motion } from "framer-motion";
 import backgroundImg from "../../assets/busAuth.png";
-import axios from "axios";
+// import axios from "axios";
 
 const RegisterUser = () => {
   const [users, setUsers] = useState([]);
@@ -31,16 +31,16 @@ const RegisterUser = () => {
     setUsers([...users, newUser]);
 
      // Send SMS via backend
-    try {
-      const message = `Hello ${name}, you have been registered successfully! if you have any query then contact on 1100110011`;
-      await axios.post("http://localhost:5000/api/sms/send", {
-        phone,
-        message,
-      });
-      console.log("SMS sent successfully");
-    } catch (err) {
-      console.error("Failed to send SMS:", err);
-    }
+    // try {
+    //   const message = `Hello ${name}, you have been registered successfully! if you have any query then contact on 1100110011`;
+    //   await axios.post("http://localhost:5000/api/sms/send", {
+    //     phone,
+    //     message,
+    //   });
+    //   console.log("SMS sent successfully");
+    // } catch (err) {
+    //   console.error("Failed to send SMS:", err);
+    // }
 
     setName("");
     setEmail("");
