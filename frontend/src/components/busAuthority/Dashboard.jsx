@@ -35,23 +35,23 @@ const AuthorityDashboard = () => {
 
       {/* Summary Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-        <div className="bg-white p-6 rounded-xl shadow text-center shadow-lg shadow-white hover:scale-105 transition-transform duration-300">
+        <div className="bg-white p-6 rounded-xl  text-center shadow-lg shadow-white hover:scale-105 transition-transform duration-300">
           <h2 className="text-xl font-semibold text-gray-700">Total Buses</h2>
           <p className="mt-2 text-3xl font-bold text-gray-900">{buses.length}</p>
         </div>
-        <div className="bg-white p-6 rounded-xl shadow text-center shadow-lg shadow-white hover:scale-105 transition-transform duration-300">
+        <div className="bg-white p-6 rounded-xl text-center shadow-lg shadow-white hover:scale-105 transition-transform duration-300">
           <h2 className="text-xl font-semibold text-gray-700">Total Routes</h2>
           <p className="mt-2 text-3xl font-bold text-gray-900">
             {buses.length} {/* Each bus has one route here */}
           </p>
         </div>
-        <div className="bg-white p-6 rounded-xl shadow text-center shadow-2xl shadow-purple-300 hover:scale-105 transition-transform duration-300">
+        <div className="bg-white p-6 rounded-xl text-center shadow-2xl shadow-purple-300 hover:scale-105 transition-transform duration-300">
           <h2 className="text-xl font-semibold text-gray-700">Total Tickets Booked</h2>
           <p className="mt-2 text-3xl font-bold text-gray-900">
             {buses.reduce((sum, bus) => sum + bus.bookedTickets, 0)}
           </p>
         </div>
-        <div className="bg-white p-6 rounded-xl shadow text-center shadow-2xl shadow-white hover:scale-105 transition-transform duration-300">
+        <div className="bg-white p-6 rounded-xl  text-center shadow-2xl shadow-white hover:scale-105 transition-transform duration-300">
           <h2 className="text-xl font-semibold text-gray-700">Tickets Left</h2>
           <p className="mt-2 text-3xl font-bold text-gray-900">
             {buses.reduce((sum, bus) => sum + (bus.totalTickets - bus.bookedTickets), 0)}
